@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>saniyeolcen</title>
+</head>
+<body>
+<script type="text/javascript">
+	var saniye=0;
+	function saniyeolcen(){
+		var deq=Math.floor(saniye/60);
+		var hour=Math.floor(saniye/1600);
+		var deqiqe=deq%60;
+		var san=saniye%60;
+
+		document.write(hour+" :"+deqiqe+" : "+san +"<br>");
+		saniye++;
+	document.close();
+	}
+	setInterval("saniyeolcen()",1000);
+
+
+</script>
+
+</body>
+</html>

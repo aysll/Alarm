@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>saniyeolcen</title>
+</head>
+<body>
+<script type="text/javascript">
+	var saniye=0;
+	function alarm(){
+		var deq=Math.floor(saniye/60);
+		var hour=Math.floor(saniye/1600);
+		var deqiqe=deq%60;
+		var san=saniye%60;
+       
+     if(san==4){
+			document.write("alarm ");
+			document.close();
+         }
+        else {
+        	document.write(hour+" :"+deqiqe+" : "+san +"<br>");
+        	document.close();
+     	}
+         saniye++;
+        
+         	
+         	
+}
+	setInterval("alarm()",1000);
+ 
+//  function myTimer(){
+//  	var d=new Date();
+//  	var t=d.toLocaleTimeString();
+//  	document.write(t +"<br>");
+ 	
+//  }
+//  myTimer();
+// setInterval("myTimer()", 3000 );
+
+</script>
+
+</body>
+</html>
